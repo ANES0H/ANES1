@@ -24,7 +24,7 @@ bcl = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(command(["تحديث", f"reload@bnm1_bot"]) & other_filters)
+@Client.on_message(command(["تحديث", f"reload@Musictsh_bot"]) & other_filters)
 @authorized_users_only
 async def update_admin(client, message):
     global admins
@@ -38,7 +38,7 @@ async def update_admin(client, message):
     )
 
 
-@Client.on_message(command(["تخطي", f"skip@bnm1_bot", "vskip"]) & other_filters)
+@Client.on_message(command(["تخطي", f"skip@Musictsh_bot", "vskip"]) & other_filters)
 @authorized_users_only
 async def skipp(client, m: Message):
 
@@ -154,7 +154,7 @@ async def stopp(client, m: Message):
         await m.reply("**يا حلو مافي شي شغال !**")
 
 @Client.on_message(
-    command(["اوكف", f"stop@bnm1_bot", "كافي", f"end@bnm1_bot", "vstop"])
+    command(["اوكف", f"stop@bnm1_bot", "كافي", f"end@Musictsh_bot", "vstop"])
     & other_filters
 )
 @authorized_users_only
@@ -241,7 +241,7 @@ async def mute(client, m: Message):
 
 
 @Client.on_message(
-    command(["الغاء كتم", f"unmute@bnm1_bot", "vunmute"]) & other_filters
+    command(["الغاء كتم", f"unmute@Musictsh_bot", "vunmute"]) & other_filters
 )
 @authorized_users_only
 async def unmute(client, m: Message):

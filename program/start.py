@@ -96,7 +96,7 @@ async def start_(client: Client, message: Message):
         )
 
 
-@Client.on_message(command(["بوت", f"help@NKQBoT"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["بوت", f"help@Musictsh_bot"]) & filters.group & ~filters.edited)
 async def cmd_(client: Client, message: Message):
     await message.reply_text(
         f"""**▪️ اهلين عيني {message.from_user.mention()}\n▪️ اسمي القميل لانا**""",
